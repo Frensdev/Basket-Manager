@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>League:</strong>
+  <%= @jornada.league_id %>
+</p>
+
+<p>
+  <strong>Season:</strong>
+  <%= @jornada.season_id %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @jornada.date %>
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Jornada</th>
+      <th>Hometeam</th>
+      <th>Awayteam</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @matches.each do |match| %>
+      <tr>
+        <td><%= match.jornada_id %></td>
+        <td><%= match.hometeam_id %></td>
+        <td><%= match.awayteam_id %></td>
+        <td><%= link_to 'Show', match %></td>
+        <td><%= link_to 'Edit', edit_match_path(match) %></td>
+        <td><%= link_to 'Destroy', match, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'Edit', edit_jornada_path(@jornada) %> |
+<%= link_to 'Back', jornadas_path %>
+
+<%= link_to 'matches', matches_path(@matches) %>

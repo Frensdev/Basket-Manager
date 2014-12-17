@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  league_id: 1
+  season_id: 1
+  name: MyString
+  city: MyString
+  balance: 9.99
+  socios: 1
+
+two:
+  league_id: 1
+  season_id: 1
+  name: MyString
+  city: MyString
+  balance: 9.99
+  socios: 1

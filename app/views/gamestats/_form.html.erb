@@ -1,0 +1,97 @@
+<%= form_for(@gamestat) do |f| %>
+  <% if @gamestat.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gamestat.errors.count, "error") %> prohibited this gamestat from being saved:</h2>
+
+      <ul>
+      <% @gamestat.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :player_id %><br>
+    <%= f.number_field :player_id %>
+  </div>
+  <div class="field">
+    <%= f.label :team_id %><br>
+    <%= f.number_field :team_id %>
+  </div>
+  <div class="field">
+    <%= f.label :match_id %><br>
+    <%= f.number_field :match_id %>
+  </div>
+  <div class="field">
+    <%= f.label :minutos %><br>
+    <%= f.number_field :minutos %>
+  </div>
+  <div class="field">
+    <%= f.label :puntos %><br>
+    <%= f.number_field :puntos %>
+  </div>
+  <div class="field">
+    <%= f.label :t2 %><br>
+    <%= f.number_field :t2 %>
+  </div>
+  <div class="field">
+    <%= f.label :t2a %><br>
+    <%= f.number_field :t2a %>
+  </div>
+  <div class="field">
+    <%= f.label :t3 %><br>
+    <%= f.number_field :t3 %>
+  </div>
+  <div class="field">
+    <%= f.label :t3a %><br>
+    <%= f.number_field :t3a %>
+  </div>
+  <div class="field">
+    <%= f.label :t1 %><br>
+    <%= f.number_field :t1 %>
+  </div>
+  <div class="field">
+    <%= f.label :t1a %><br>
+    <%= f.number_field :t1a %>
+  </div>
+  <div class="field">
+    <%= f.label :rebotes %><br>
+    <%= f.number_field :rebotes %>
+  </div>
+  <div class="field">
+    <%= f.label :rebotesoff %><br>
+    <%= f.number_field :rebotesoff %>
+  </div>
+  <div class="field">
+    <%= f.label :assistencias %><br>
+    <%= f.number_field :assistencias %>
+  </div>
+  <div class="field">
+    <%= f.label :robos %><br>
+    <%= f.number_field :robos %>
+  </div>
+  <div class="field">
+    <%= f.label :tapones %><br>
+    <%= f.number_field :tapones %>
+  </div>
+  <div class="field">
+    <%= f.label :perdidas %><br>
+    <%= f.number_field :perdidas %>
+  </div>
+  <div class="field">
+    <%= f.label :faltas %><br>
+    <%= f.number_field :faltas %>
+  </div>
+  <div class="field">
+    <%= f.label :faltasrecibidas %><br>
+    <%= f.number_field :faltasrecibidas %>
+  </div>
+  <div class="field">
+    <%= f.label :valoracion %><br>
+    <%= f.number_field :valoracion %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

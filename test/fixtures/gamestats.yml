@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player_id: 1
+  team_id: 1
+  match_id: 1
+  minutos: 1
+  puntos: 1
+  t2: 1
+  t2a: 1
+  t3: 1
+  t3a: 1
+  t1: 1
+  t1a: 1
+  rebotes: 1
+  rebotesoff: 1
+  assistencias: 1
+  robos: 1
+  tapones: 1
+  perdidas: 1
+  faltas: 1
+  faltasrecibidas: 1
+  valoracion: 1
+
+two:
+  player_id: 1
+  team_id: 1
+  match_id: 1
+  minutos: 1
+  puntos: 1
+  t2: 1
+  t2a: 1
+  t3: 1
+  t3a: 1
+  t1: 1
+  t1a: 1
+  rebotes: 1
+  rebotesoff: 1
+  assistencias: 1
+  robos: 1
+  tapones: 1
+  perdidas: 1
+  faltas: 1
+  faltasrecibidas: 1
+  valoracion: 1

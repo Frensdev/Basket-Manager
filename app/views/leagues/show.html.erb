@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Season:</strong>
+  <%= @league.season_id %>
+</p>
+
+<%= link_to 'Edit', edit_league_path(@league) %> |
+<%= link_to 'Back', leagues_path %>
+
+<%= link_to 'teams', teams_path(@teams) %>
+
+<%= link_to 'seasons', seasons_path(@seasons) %>
+
+<%= link_to 'jorandas', jornadas_path(@jornadas) %>
+

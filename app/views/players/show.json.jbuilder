@@ -1,0 +1,1 @@
+json.extract! @player, :id, :team_id, :nombre, :apellido, :city, :nacimiento, :altura, :peso, :position, :shotins, :shotmed, :shotlong, :shotfree, :fuerza, :speed, :jump, :resist, :steal, :block, :pass, :reb, :mental, :teamwork, :potencial, :intensidad, :created_at, :updated_at

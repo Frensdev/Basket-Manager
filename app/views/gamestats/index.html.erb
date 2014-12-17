@@ -1,0 +1,63 @@
+<h1>Listing gamestats</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Player</th>
+      <th>Team</th>
+      <th>Match</th>
+      <th>Minutos</th>
+      <th>Puntos</th>
+      <th>T2</th>
+      <th>T2a</th>
+      <th>T3</th>
+      <th>T3a</th>
+      <th>T1</th>
+      <th>T1a</th>
+      <th>Rebotes</th>
+      <th>Rebotesoff</th>
+      <th>Assistencias</th>
+      <th>Robos</th>
+      <th>Tapones</th>
+      <th>Perdidas</th>
+      <th>Faltas</th>
+      <th>Faltasrecibidas</th>
+      <th>Valoracion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gamestats.each do |gamestat| %>
+      <tr>
+        <td><%= gamestat.player_id %></td>
+        <td><%= gamestat.team_id %></td>
+        <td><%= gamestat.match_id %></td>
+        <td><%= gamestat.minutos %></td>
+        <td><%= gamestat.puntos %></td>
+        <td><%= gamestat.t2 %></td>
+        <td><%= gamestat.t2a %></td>
+        <td><%= gamestat.t3 %></td>
+        <td><%= gamestat.t3a %></td>
+        <td><%= gamestat.t1 %></td>
+        <td><%= gamestat.t1a %></td>
+        <td><%= gamestat.rebotes %></td>
+        <td><%= gamestat.rebotesoff %></td>
+        <td><%= gamestat.assistencias %></td>
+        <td><%= gamestat.robos %></td>
+        <td><%= gamestat.tapones %></td>
+        <td><%= gamestat.perdidas %></td>
+        <td><%= gamestat.faltas %></td>
+        <td><%= gamestat.faltasrecibidas %></td>
+        <td><%= gamestat.valoracion %></td>
+        <td><%= link_to 'Show', gamestat %></td>
+        <td><%= link_to 'Edit', edit_gamestat_path(gamestat) %></td>
+        <td><%= link_to 'Destroy', gamestat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gamestat', new_gamestat_path %>

@@ -1,0 +1,113 @@
+<%= form_for(@player) do |f| %>
+  <% if @player.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@player.errors.count, "error") %> prohibited this player from being saved:</h2>
+
+      <ul>
+      <% @player.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :team_id %><br>
+    <%= f.number_field :team_id %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :apellido %><br>
+    <%= f.text_field :apellido %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :nacimiento %><br>
+    <%= f.number_field :nacimiento %>
+  </div>
+  <div class="field">
+    <%= f.label :altura %><br>
+    <%= f.text_field :altura %>
+  </div>
+  <div class="field">
+    <%= f.label :peso %><br>
+    <%= f.text_field :peso %>
+  </div>
+  <div class="field">
+    <%= f.label :position %><br>
+    <%= f.number_field :position %>
+  </div>
+  <div class="field">
+    <%= f.label :shotins %><br>
+    <%= f.number_field :shotins %>
+  </div>
+  <div class="field">
+    <%= f.label :shotmed %><br>
+    <%= f.number_field :shotmed %>
+  </div>
+  <div class="field">
+    <%= f.label :shotlong %><br>
+    <%= f.number_field :shotlong %>
+  </div>
+  <div class="field">
+    <%= f.label :shotfree %><br>
+    <%= f.number_field :shotfree %>
+  </div>
+  <div class="field">
+    <%= f.label :fuerza %><br>
+    <%= f.number_field :fuerza %>
+  </div>
+  <div class="field">
+    <%= f.label :speed %><br>
+    <%= f.number_field :speed %>
+  </div>
+  <div class="field">
+    <%= f.label :jump %><br>
+    <%= f.number_field :jump %>
+  </div>
+  <div class="field">
+    <%= f.label :resist %><br>
+    <%= f.number_field :resist %>
+  </div>
+  <div class="field">
+    <%= f.label :steal %><br>
+    <%= f.number_field :steal %>
+  </div>
+  <div class="field">
+    <%= f.label :block %><br>
+    <%= f.number_field :block %>
+  </div>
+  <div class="field">
+    <%= f.label :pass %><br>
+    <%= f.number_field :pass %>
+  </div>
+  <div class="field">
+    <%= f.label :reb %><br>
+    <%= f.number_field :reb %>
+  </div>
+  <div class="field">
+    <%= f.label :mental %><br>
+    <%= f.number_field :mental %>
+  </div>
+  <div class="field">
+    <%= f.label :teamwork %><br>
+    <%= f.number_field :teamwork %>
+  </div>
+  <div class="field">
+    <%= f.label :potencial %><br>
+    <%= f.number_field :potencial %>
+  </div>
+  <div class="field">
+    <%= f.label :intensidad %><br>
+    <%= f.number_field :intensidad %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

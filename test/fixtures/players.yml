@@ -1,0 +1,53 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  team_id: 1
+  nombre: MyString
+  apellido: MyString
+  city: MyString
+  nacimiento: 1
+  altura: 9.99
+  peso: 9.99
+  position: 1
+  shotins: 1
+  shotmed: 1
+  shotlong: 1
+  shotfree: 1
+  fuerza: 1
+  speed: 1
+  jump: 1
+  resist: 1
+  steal: 1
+  block: 1
+  pass: 1
+  reb: 1
+  mental: 1
+  teamwork: 1
+  potencial: 1
+  intensidad: 1
+
+two:
+  team_id: 1
+  nombre: MyString
+  apellido: MyString
+  city: MyString
+  nacimiento: 1
+  altura: 9.99
+  peso: 9.99
+  position: 1
+  shotins: 1
+  shotmed: 1
+  shotlong: 1
+  shotfree: 1
+  fuerza: 1
+  speed: 1
+  jump: 1
+  resist: 1
+  steal: 1
+  block: 1
+  pass: 1
+  reb: 1
+  mental: 1
+  teamwork: 1
+  potencial: 1
+  intensidad: 1

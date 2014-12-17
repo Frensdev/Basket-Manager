@@ -1,0 +1,71 @@
+<h1>Listing players</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Team</th>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>City</th>
+      <th>Nacimiento</th>
+      <th>Altura</th>
+      <th>Peso</th>
+      <th>Position</th>
+      <th>Shotins</th>
+      <th>Shotmed</th>
+      <th>Shotlong</th>
+      <th>Shotfree</th>
+      <th>Fuerza</th>
+      <th>Speed</th>
+      <th>Jump</th>
+      <th>Resist</th>
+      <th>Steal</th>
+      <th>Block</th>
+      <th>Pass</th>
+      <th>Reb</th>
+      <th>Mental</th>
+      <th>Teamwork</th>
+      <th>Potencial</th>
+      <th>Intensidad</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @players.each do |player| %>
+      <tr>
+        <td><%= player.team_id %></td>
+        <td><%= player.nombre %></td>
+        <td><%= player.apellido %></td>
+        <td><%= player.city %></td>
+        <td><%= player.nacimiento %></td>
+        <td><%= player.altura %></td>
+        <td><%= player.peso %></td>
+        <td><%= player.position %></td>
+        <td><%= player.shotins %></td>
+        <td><%= player.shotmed %></td>
+        <td><%= player.shotlong %></td>
+        <td><%= player.shotfree %></td>
+        <td><%= player.fuerza %></td>
+        <td><%= player.speed %></td>
+        <td><%= player.jump %></td>
+        <td><%= player.resist %></td>
+        <td><%= player.steal %></td>
+        <td><%= player.block %></td>
+        <td><%= player.pass %></td>
+        <td><%= player.reb %></td>
+        <td><%= player.mental %></td>
+        <td><%= player.teamwork %></td>
+        <td><%= player.potencial %></td>
+        <td><%= player.intensidad %></td>
+        <td><%= link_to 'Show', player %></td>
+        <td><%= link_to 'Edit', edit_player_path(player) %></td>
+        <td><%= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Player', new_player_path %>

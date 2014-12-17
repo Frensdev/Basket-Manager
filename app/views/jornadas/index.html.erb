@@ -1,0 +1,29 @@
+<h1>Listing jornadas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>League</th>
+      <th>Season</th>
+      <th>Date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @jornadas.each do |jornada| %>
+      <tr>
+        <td><%= jornada.league_id %></td>
+        <td><%= jornada.season_id %></td>
+        <td><%= jornada.date %></td>
+        <td><%= link_to 'Show', jornada %></td>
+        <td><%= link_to 'Edit', edit_jornada_path(jornada) %></td>
+        <td><%= link_to 'Destroy', jornada, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Jornada', new_jornada_path %>
