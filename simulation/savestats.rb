@@ -4,7 +4,7 @@ def saveplayerstat(player_id,team_id,match_id,minutos,puntos,t2,t2a,t3,t3a,t1,t1
 
 match_id = match_id
 team_id = team_id
-minutos = minutos
+minutos = (minutos/60)
 puntos = puntos
 t2 = t2
 t2a = t2a
