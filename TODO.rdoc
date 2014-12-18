@@ -3,3 +3,4 @@ sistema de cansancio y cambio de jugadores
 ---añadido sistema de cansancio e principio cambio de xogadores
 	falta añadir uso de cansancio en sustituciones e outras funciones como tiros defensa
 	falta implementar rotaciones
+---añadido cansancio a rotaciones
