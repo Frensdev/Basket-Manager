@@ -3623,3 +3623,157 @@ Processing by MatchesController#show as HTML
   [1m[36mGamestat Load (1.5ms)[0m  [1mSELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 26[0m
   Rendered matches/show.html.erb within layouts/application (21.0ms)
 Completed 200 OK in 290ms (Views: 285.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-18 17:55:28 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (36.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 700ms (Views: 665.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/gamestats.css?body=1" for 127.0.0.1 at 2014-12-18 17:55:30 +0100
+
+
+Started GET "/assets/jornadas.css?body=1" for 127.0.0.1 at 2014-12-18 17:55:30 +0100
+
+
+Started GET "/assets/matches.css?body=1" for 127.0.0.1 at 2014-12-18 17:55:30 +0100
+
+
+Started GET "/assets/leagues.css?body=1" for 127.0.0.1 at 2014-12-18 17:55:30 +0100
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-12-18 17:55:30 +0100
+
+
+Started GET "/assets/seasons.css?body=1" for 127.0.0.1 at 2014-12-18 17:55:30 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-18 17:55:30 +0100
+
+
+Started GET "/assets/players.css?body=1" for 127.0.0.1 at 2014-12-18 17:55:30 +0100
+
+
+Started GET "/assets/wellcome.css?body=1" for 127.0.0.1 at 2014-12-18 17:55:30 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-18 17:55:31 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-18 17:55:31 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-18 17:55:31 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-18 17:55:31 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-18 17:55:31 +0100
+
+
+Started GET "/assets/gamestats.js?body=1" for 127.0.0.1 at 2014-12-18 17:55:31 +0100
+
+
+Started GET "/assets/jornadas.js?body=1" for 127.0.0.1 at 2014-12-18 17:55:31 +0100
+
+
+Started GET "/assets/leagues.js?body=1" for 127.0.0.1 at 2014-12-18 17:55:31 +0100
+
+
+Started GET "/assets/matches.js?body=1" for 127.0.0.1 at 2014-12-18 17:55:31 +0100
+
+
+Started GET "/assets/seasons.js?body=1" for 127.0.0.1 at 2014-12-18 17:55:31 +0100
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2014-12-18 17:55:31 +0100
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-12-18 17:55:31 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-18 17:55:31 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-18 17:55:31 +0100
+
+
+Started GET "/assets/wellcome.js?body=1" for 127.0.0.1 at 2014-12-18 17:55:31 +0100
+
+
+Started GET "/matches" for 127.0.0.1 at 2014-12-18 17:55:33 +0100
+Processing by MatchesController#index as HTML
+  [1m[35mMatch Load (1.9ms)[0m  SELECT "matches".* FROM "matches"
+  Rendered matches/index.html.erb within layouts/application (231.0ms)
+Completed 200 OK in 477ms (Views: 402.8ms | ActiveRecord: 69.4ms)
+
+
+Started GET "/matches/31" for 127.0.0.1 at 2014-12-18 17:55:37 +0100
+Processing by MatchesController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mMatch Load (0.5ms)[0m  [1mSELECT  "matches".* FROM "matches"  WHERE "matches"."id" = $1 LIMIT 1[0m  [["id", 31]]
+  [1m[35mGamestat Load (17.8ms)[0m  SELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 31
+  Rendered matches/show.html.erb within layouts/application (83.6ms)
+Completed 200 OK in 369ms (Views: 318.4ms | ActiveRecord: 23.1ms)
+
+
+Started GET "/matches" for 127.0.0.1 at 2014-12-18 17:57:22 +0100
+Processing by MatchesController#index as HTML
+  [1m[36mMatch Load (1.4ms)[0m  [1mSELECT "matches".* FROM "matches"[0m
+  Rendered matches/index.html.erb within layouts/application (143.6ms)
+Completed 200 OK in 369ms (Views: 366.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/matches/37" for 127.0.0.1 at 2014-12-18 17:57:26 +0100
+Processing by MatchesController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[35mMatch Load (0.7ms)[0m  SELECT  "matches".* FROM "matches"  WHERE "matches"."id" = $1 LIMIT 1  [["id", 37]]
+  [1m[36mGamestat Load (1.5ms)[0m  [1mSELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 37[0m
+  Rendered matches/show.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 271ms (Views: 266.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/matches/42" for 127.0.0.1 at 2014-12-18 18:20:02 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MatchesController#show as HTML
+  Parameters: {"id"=>"42"}
+  [1m[35mMatch Load (0.9ms)[0m  SELECT  "matches".* FROM "matches"  WHERE "matches"."id" = $1 LIMIT 1  [["id", 42]]
+  [1m[36mGamestat Load (2.1ms)[0m  [1mSELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 42[0m
+  Rendered matches/show.html.erb within layouts/application (86.6ms)
+Completed 200 OK in 526ms (Views: 473.3ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/matches" for 127.0.0.1 at 2014-12-18 18:20:21 +0100
+Processing by MatchesController#index as HTML
+  [1m[35mMatch Load (1.5ms)[0m  SELECT "matches".* FROM "matches"
+  Rendered matches/index.html.erb within layouts/application (146.5ms)
+Completed 200 OK in 391ms (Views: 388.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/matches/43" for 127.0.0.1 at 2014-12-18 18:20:25 +0100
+Processing by MatchesController#show as HTML
+  Parameters: {"id"=>"43"}
+  [1m[36mMatch Load (0.6ms)[0m  [1mSELECT  "matches".* FROM "matches"  WHERE "matches"."id" = $1 LIMIT 1[0m  [["id", 43]]
+  [1m[35mGamestat Load (17.7ms)[0m  SELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 43
+  Rendered matches/show.html.erb within layouts/application (46.6ms)
+Completed 200 OK in 298ms (Views: 277.1ms | ActiveRecord: 18.3ms)
+
+
+Started GET "/matches/51" for 127.0.0.1 at 2014-12-18 18:30:25 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MatchesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[35mMatch Load (0.7ms)[0m  SELECT  "matches".* FROM "matches"  WHERE "matches"."id" = $1 LIMIT 1  [["id", 51]]
+  [1m[36mGamestat Load (24.1ms)[0m  [1mSELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 51[0m
+  Rendered matches/show.html.erb within layouts/application (108.6ms)
+Completed 200 OK in 542ms (Views: 468.9ms | ActiveRecord: 35.1ms)
+
+
+Started GET "/matches" for 127.0.0.1 at 2014-12-18 18:31:04 +0100
+Processing by MatchesController#index as HTML
+  [1m[35mMatch Load (1.5ms)[0m  SELECT "matches".* FROM "matches"
+  Rendered matches/index.html.erb within layouts/application (155.7ms)
+Completed 200 OK in 390ms (Views: 387.8ms | ActiveRecord: 1.5ms)

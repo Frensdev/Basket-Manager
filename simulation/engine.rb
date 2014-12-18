@@ -79,13 +79,13 @@ teamhfoul = 0
 teamafoul = 0
 while time > 0.00
 #cambios
-home_oncourt = oncourtplayers(5,1,2,3,4,5,1,2,3,4,1,hometeam_energy[0],hometeam_energy[1],hometeam_energy[2],hometeam_energy[3],hometeam_energy[4],hometeam_energy[5],hometeam_energy[6],hometeam_energy[7],hometeam_energy[8],hometeam_energy[9],hometeam_energy[10])
-away_oncourt = oncourtplayers(5,1,2,3,4,5,1,2,5,3,4,awayteam_energy[0],awayteam_energy[1],awayteam_energy[2],awayteam_energy[3],awayteam_energy[4],awayteam_energy[5],awayteam_energy[6],awayteam_energy[7],awayteam_energy[8],awayteam_energy[9],awayteam_energy[10])
+home_oncourt = oncourtplayers(hometeam[0]["position"],hometeam[1]["position"],hometeam[2]["position"],hometeam[3]["position"],hometeam[4]["position"],hometeam[5]["position"],hometeam[6]["position"],hometeam[7]["position"],hometeam[8]["position"],hometeam[9]["position"],hometeam[10]["position"],hometeam_energy[0],hometeam_energy[1],hometeam_energy[2],hometeam_energy[3],hometeam_energy[4],hometeam_energy[5],hometeam_energy[6],hometeam_energy[7],hometeam_energy[8],hometeam_energy[9],hometeam_energy[10])
+away_oncourt = oncourtplayers(awayteam[0]["position"],awayteam[1]["position"],awayteam[2]["position"],awayteam[3]["position"],awayteam[4]["position"],awayteam[5]["position"],awayteam[6]["position"],awayteam[7]["position"],awayteam[8]["position"],awayteam[9]["position"],awayteam[10]["position"],awayteam_energy[0],awayteam_energy[1],awayteam_energy[2],awayteam_energy[3],awayteam_energy[4],awayteam_energy[5],awayteam_energy[6],awayteam_energy[7],awayteam_energy[8],awayteam_energy[9],awayteam_energy[10])
 
 
 timer = 0
 	if posesionteam
-	play = position(hometeam[home_oncourt[0]]["position"].to_i,hometeam[home_oncourt[1]]["position"].to_i,hometeam[home_oncourt[2]]["position"].to_i,hometeam[home_oncourt[3]]["position"].to_i,hometeam[home_oncourt[4]]["position"].to_i,awayteam[away_oncourt[0]]["position"].to_i,awayteam[away_oncourt[1]]["position"].to_i,awayteam[away_oncourt[2]]["position"].to_i,awayteam[away_oncourt[3]]["position"].to_i,awayteam[away_oncourt[4]]["position"].to_i)
+	play = position(hometeam[home_oncourt[0]]["position"].to_i,hometeam[home_oncourt[1]]["position"].to_i,hometeam[home_oncourt[2]]["position"].to_i,hometeam[home_oncourt[3]]["position"].to_i,hometeam[home_oncourt[4]]["position"].to_i,home_oncourt[0],home_oncourt[1],home_oncourt[2],home_oncourt[3],home_oncourt[4],awayteam[away_oncourt[0]]["position"].to_i,awayteam[away_oncourt[1]]["position"].to_i,awayteam[away_oncourt[2]]["position"].to_i,awayteam[away_oncourt[3]]["position"].to_i,awayteam[away_oncourt[4]]["position"].to_i,away_oncourt[0],away_oncourt[1],away_oncourt[2],away_oncourt[3],away_oncourt[4])
 	atacker = hometeam[play[0]]
 	defensor = awayteam[play[1]]
 	offrebounder = hometeam[play[3]]
@@ -234,7 +234,7 @@ timer = 0
 		posesionteam = false
 		end
 	else
-	play = position(awayteam[away_oncourt[0]]["position"].to_i,awayteam[away_oncourt[1]]["position"].to_i,awayteam[away_oncourt[2]]["position"].to_i,awayteam[away_oncourt[3]]["position"].to_i,awayteam[away_oncourt[4]]["position"].to_i,hometeam[home_oncourt[0]]["position"].to_i,hometeam[home_oncourt[1]]["position"].to_i,hometeam[home_oncourt[2]]["position"].to_i,hometeam[home_oncourt[3]]["position"].to_i,hometeam[home_oncourt[4]]["position"].to_i)
+	play = position(awayteam[away_oncourt[0]]["position"].to_i,awayteam[away_oncourt[1]]["position"].to_i,awayteam[away_oncourt[2]]["position"].to_i,awayteam[away_oncourt[3]]["position"].to_i,awayteam[away_oncourt[4]]["position"].to_i,away_oncourt[0],away_oncourt[1],away_oncourt[2],away_oncourt[3],away_oncourt[4],hometeam[home_oncourt[0]]["position"].to_i,hometeam[home_oncourt[1]]["position"].to_i,hometeam[home_oncourt[2]]["position"].to_i,hometeam[home_oncourt[3]]["position"].to_i,hometeam[home_oncourt[4]]["position"].to_i,home_oncourt[0],home_oncourt[1],home_oncourt[2],home_oncourt[3],home_oncourt[4])
 	atacker = awayteam[play[0]]
 	defensor = hometeam[play[1]]
 	offrebounder = awayteam[play[3]]
@@ -448,7 +448,7 @@ puts "visit team #{teamastats[0][1]+ teamastats[1][1] + teamastats[2][1] + teama
 
 #hstats mins puntos robos perdidas tapones rebotes faltas reboffensivos assitencias faltasrecibidas t2 t2a t3 t3a t1 t1a
 #9position 3apellido 2 nombre 1 team_id
-'
+
 #estadisticas equipos
 n=0
 hometeam_stats = [0,hometeam[n]["team_id"],match_id,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
@@ -474,5 +474,5 @@ awayteam_stats = [0,awayteam[n]["team_id"],match_id,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 	awayteam_stats = [0,awayteam[n]["team_id"],match_id,awayteam_stats[3] + teamastats[n][0],awayteam_stats[4] + teamastats[n][1],awayteam_stats[5] + teamastats[n][10],awayteam_stats[6] + teamastats[n][11], awayteam_stats[7] + teamastats[n][12],awayteam_stats[8] + teamastats[n][13], awayteam_stats[9] + teamastats[n][14], awayteam_stats[10] + teamastats[n][15], awayteam_stats[11] + teamastats[n][5], awayteam_stats[12] + teamastats[n][7], awayteam_stats[13] + teamastats[n][8], awayteam_stats[14] + teamastats[n][2], awayteam_stats[15] + teamastats[n][4], awayteam_stats[16] +teamastats[n][3], awayteam_stats[17] + teamastats[n][6], awayteam_stats[18] + teamastats[n][9],0]
 	n+=1
 end
-saveplayerstat(awayteam_stats[0],awayteam_stats[1],awayteam_stats[2],awayteam_stats[3],awayteam_stats[4],awayteam_stats[5],awayteam_stats[6],awayteam_stats[7],awayteam_stats[8],awayteam_stats[9],awayteam_stats[10],awayteam_stats[11],awayteam_stats[12],awayteam_stats[13],awayteam_stats[14],awayteam_stats[15],awayteam_stats[16],awayteam_stats[17],awayteam_stats[18],awayteam_stats[19])'
+saveplayerstat(awayteam_stats[0],awayteam_stats[1],awayteam_stats[2],awayteam_stats[3],awayteam_stats[4],awayteam_stats[5],awayteam_stats[6],awayteam_stats[7],awayteam_stats[8],awayteam_stats[9],awayteam_stats[10],awayteam_stats[11],awayteam_stats[12],awayteam_stats[13],awayteam_stats[14],awayteam_stats[15],awayteam_stats[16],awayteam_stats[17],awayteam_stats[18],awayteam_stats[19])
 end 

@@ -1,49 +1,60 @@
-def position(h0,h1,h2,h3,h4,a0,a1,a2,a3,a4)
-	positionattack = rand(0..4)
-	offreb = rand(0...4)
-	if positionattack == 0
-		asist = [1,2,3,4].sample
-		atack = 0
+def position(attackerstat0,attackerstat1,attackerstat2,attackerstat3,attackerstat4,attackeroncourt0,attackeroncourt1,attackeroncourt2,attackeroncourt3,attackeroncourt4,defenderstat0,defenderstat1,defenderstat2,defenderstat3,defenderstat4,defenderoncourt0,defenderoncourt1,defenderoncourt2,defenderoncourt3,defenderoncourt4)
+	
+	atackerteam = [attackeroncourt0,attackeroncourt1,attackeroncourt2,attackeroncourt3,attackeroncourt4]
+	defenderteam = [defenderoncourt0,defenderoncourt1,defenderoncourt2,defenderoncourt3,defenderoncourt4]
+
+	positionattack = rand(0..50)
+	offreb = rand(5)
+
+	if positionattack <= 10
+		asist = [attackeroncourt1,attackeroncourt2,attackeroncourt3,attackeroncourt4].sample
+		atack = atackerteam[0]
 		if rand(0...10) > 8
-			deff = rand(0...4)
+			deffender = rand(0...4)
+			deff = defenderteam[deffender]
 		else
-			deff = 0
+			deff = defenderteam[0]
 		end
 
-	elsif positionattack == 1
-		atack = 1
-		asist = [0,2,3,4].sample
+	elsif positionattack <= 20
+		asist = [attackeroncourt0,attackeroncourt2,attackeroncourt3,attackeroncourt4].sample
+		atack = atackerteam[1]
 		if rand(0...10) > 8
-			deff = rand(0...4)
+			deffender = rand(0...4)
+			deff = defenderteam[deffender]
 		else
-			deff = 1
+			deff = defenderteam[1]
 		end
 
-	elsif positionattack == 2
-		atack = 2
-		asist = [0,1,3,4].sample
+
+	elsif positionattack <= 30
+		asist = [attackeroncourt0,attackeroncourt2,attackeroncourt3,attackeroncourt4].sample
+		atack = atackerteam[2]
 		if rand(0...10) > 8
-			deff = rand(0...4)
+			deffender = rand(0...4)
+			deff = defenderteam[deffender]
 		else
-			deff = 2
+			deff = defenderteam[2]
 		end
 
-	elsif positionattack == 3
-		atack = 3
-		asist = [0,1,2,4].sample
+	elsif positionattack <= 40
+		asist = [attackeroncourt0,attackeroncourt1,attackeroncourt2,attackeroncourt4].sample
+		atack = atackerteam[3]
 		if rand(0...10) > 8
-			deff = rand(0...4)
+			deffender = rand(0...4)
+			deff = defenderteam[deffender]
 		else
-			deff = 3
+			deff = defenderteam[3]
 		end
 
 	else
-		atack = 4
-		asist = [0,1,2,3].sample
+		asist = [attackeroncourt0,attackeroncourt1,attackeroncourt2,attackeroncourt3].sample
+		atack = atackerteam[4]
 		if rand(0...10) > 8
-			deff = rand(0...4)
+			deffender = rand(0...4)
+			deff = defenderteam[deffender]
 		else
-			deff = 4
+			deff = defenderteam[4]
 		end
 	end
 	return atack.to_i,deff.to_i,asist.to_i,offreb.to_i

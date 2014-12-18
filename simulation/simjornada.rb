@@ -8,7 +8,7 @@ require './engine.rb'
 
 require 'pg'
 
-jornada = [3,1,2]
+jornada = [6,1,2]
 
 begin
 
