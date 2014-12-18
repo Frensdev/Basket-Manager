@@ -74,14 +74,19 @@ gamestats = [teamhstats,teamastats]
 
 posesionteam = true
 4.times do
+home_oncourt = oncourtplayers(hometeam[0]["position"],hometeam[1]["position"],hometeam[2]["position"],hometeam[3]["position"],hometeam[4]["position"],hometeam[5]["position"],hometeam[6]["position"],hometeam[7]["position"],hometeam[8]["position"],hometeam[9]["position"],hometeam[10]["position"],hometeam_energy[0],hometeam_energy[1],hometeam_energy[2],hometeam_energy[3],hometeam_energy[4],hometeam_energy[5],hometeam_energy[6],hometeam_energy[7],hometeam_energy[8],hometeam_energy[9],hometeam_energy[10])
+away_oncourt = oncourtplayers(awayteam[0]["position"],awayteam[1]["position"],awayteam[2]["position"],awayteam[3]["position"],awayteam[4]["position"],awayteam[5]["position"],awayteam[6]["position"],awayteam[7]["position"],awayteam[8]["position"],awayteam[9]["position"],awayteam[10]["position"],awayteam_energy[0],awayteam_energy[1],awayteam_energy[2],awayteam_energy[3],awayteam_energy[4],awayteam_energy[5],awayteam_energy[6],awayteam_energy[7],awayteam_energy[8],awayteam_energy[9],awayteam_energy[10])
+
 time = 600.00
 teamhfoul = 0
 teamafoul = 0
 while time > 0.00
 #cambios
+changesalowed = rand(10)
+if changesalowed > 7
 home_oncourt = oncourtplayers(hometeam[0]["position"],hometeam[1]["position"],hometeam[2]["position"],hometeam[3]["position"],hometeam[4]["position"],hometeam[5]["position"],hometeam[6]["position"],hometeam[7]["position"],hometeam[8]["position"],hometeam[9]["position"],hometeam[10]["position"],hometeam_energy[0],hometeam_energy[1],hometeam_energy[2],hometeam_energy[3],hometeam_energy[4],hometeam_energy[5],hometeam_energy[6],hometeam_energy[7],hometeam_energy[8],hometeam_energy[9],hometeam_energy[10])
 away_oncourt = oncourtplayers(awayteam[0]["position"],awayteam[1]["position"],awayteam[2]["position"],awayteam[3]["position"],awayteam[4]["position"],awayteam[5]["position"],awayteam[6]["position"],awayteam[7]["position"],awayteam[8]["position"],awayteam[9]["position"],awayteam[10]["position"],awayteam_energy[0],awayteam_energy[1],awayteam_energy[2],awayteam_energy[3],awayteam_energy[4],awayteam_energy[5],awayteam_energy[6],awayteam_energy[7],awayteam_energy[8],awayteam_energy[9],awayteam_energy[10])
-
+end
 
 timer = 0
 	if posesionteam
@@ -144,11 +149,11 @@ timer = 0
 						atackerstat[15] = atackerstat[15] + 1 
 							if isoffreb(10)
 							offrebstat[7] = offrebstat[7] + 1
-							puts "#{(time - timer)} #{atacker['nombre']} misses the mid shot and #{offrebounder['nombre']}  picks the rebound"
+							puts "#{(time - timer)} #{atacker['nombre']} misses the free shot and #{offrebounder['nombre']}  picks the rebound"
 							offrebound = true
 							else
 							defensorstat[5] = defensorstat[5] + 1
-							puts "#{(time - timer)} #{atacker['nombre']} misses the mid shot and #{defensor['nombre']} picks the rebound"
+							puts "#{(time - timer)} #{atacker['nombre']} misses the free shot and #{defensor['nombre']} picks the rebound"
 							end
 						end
 				 
@@ -202,6 +207,7 @@ timer = 0
 						puts "#{(time - timer)} #{atacker['nombre']} misses the mid shot and #{defensor['nombre']} picks the rebound"
 						end
 					end
+				else
 					if shot2(atacker["shotins"].to_i,defensor["block"].to_i)
 					atackerstat[1] = atackerstat[1] + 2
 					atackerstat[10] = atackerstat[10] + 1
@@ -293,11 +299,11 @@ timer = 0
 						atackerstat[15] = atackerstat[15] + 1 
 							if isoffreb(10)
 							offrebstat[7] = offrebstat[7] + 1
-							puts "#{(time - timer)} #{atacker['nombre']} misses the mid shot and #{offrebounder['nombre']}  picks the rebound"
+							puts "#{(time - timer)} #{atacker['nombre']} misses the free shot and #{offrebounder['nombre']}  picks the rebound"
 							offrebound = true
 							else
 							defensorstat[5] = defensorstat[5] + 1
-							puts "#{(time - timer)} #{atacker['nombre']} misses the mid shot and #{defensor['nombre']} picks the rebound"
+							puts "#{(time - timer)} #{atacker['nombre']} misses the free shot and #{defensor['nombre']} picks the rebound"
 							end
 						end
 				 
@@ -351,6 +357,7 @@ timer = 0
 						puts "#{(time - timer)} #{atacker['nombre']} misses the mid shot and #{defensor['nombre']} picks the rebound"
 						end
 					end
+				else
 					if shot2(atacker["shotins"].to_i,defensor["block"].to_i)
 					atackerstat[1] = atackerstat[1] + 2
 					atackerstat[10] = atackerstat[10] + 1
@@ -375,7 +382,7 @@ timer = 0
 						end
 				
 					end
-				else	
+					
 				end
 			end
 		end

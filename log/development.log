@@ -3777,3 +3777,77 @@ Processing by MatchesController#index as HTML
   [1m[35mMatch Load (1.5ms)[0m  SELECT "matches".* FROM "matches"
   Rendered matches/index.html.erb within layouts/application (155.7ms)
 Completed 200 OK in 390ms (Views: 387.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/matches/71" for 127.0.0.1 at 2014-12-18 20:14:25 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MatchesController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[35mMatch Load (0.6ms)[0m  SELECT  "matches".* FROM "matches"  WHERE "matches"."id" = $1 LIMIT 1  [["id", 71]]
+  [1m[36mGamestat Load (21.8ms)[0m  [1mSELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 71[0m
+  Rendered matches/show.html.erb within layouts/application (103.9ms)
+Completed 200 OK in 500ms (Views: 435.0ms | ActiveRecord: 29.7ms)
+
+
+Started GET "/matches" for 127.0.0.1 at 2014-12-18 20:15:05 +0100
+Processing by MatchesController#index as HTML
+  [1m[35mMatch Load (1.5ms)[0m  SELECT "matches".* FROM "matches"
+  Rendered matches/index.html.erb within layouts/application (150.0ms)
+Completed 200 OK in 375ms (Views: 372.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/matches/75" for 127.0.0.1 at 2014-12-18 20:15:11 +0100
+Processing by MatchesController#show as HTML
+  Parameters: {"id"=>"75"}
+  [1m[36mMatch Load (3.0ms)[0m  [1mSELECT  "matches".* FROM "matches"  WHERE "matches"."id" = $1 LIMIT 1[0m  [["id", 75]]
+  [1m[35mGamestat Load (1.9ms)[0m  SELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 75
+  Rendered matches/show.html.erb within layouts/application (33.9ms)
+Completed 200 OK in 294ms (Views: 285.9ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/matches" for 127.0.0.1 at 2014-12-18 20:15:41 +0100
+Processing by MatchesController#index as HTML
+  [1m[36mMatch Load (1.5ms)[0m  [1mSELECT "matches".* FROM "matches"[0m
+  Rendered matches/index.html.erb within layouts/application (146.5ms)
+Completed 200 OK in 404ms (Views: 401.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/matches/79" for 127.0.0.1 at 2014-12-18 20:15:46 +0100
+Processing by MatchesController#show as HTML
+  Parameters: {"id"=>"79"}
+  [1m[35mMatch Load (0.6ms)[0m  SELECT  "matches".* FROM "matches"  WHERE "matches"."id" = $1 LIMIT 1  [["id", 79]]
+  [1m[36mGamestat Load (2.0ms)[0m  [1mSELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 79[0m
+  Rendered matches/show.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 283ms (Views: 278.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/matches" for 127.0.0.1 at 2014-12-18 20:16:08 +0100
+Processing by MatchesController#index as HTML
+  [1m[35mMatch Load (1.4ms)[0m  SELECT "matches".* FROM "matches"
+  Rendered matches/index.html.erb within layouts/application (147.0ms)
+Completed 200 OK in 388ms (Views: 385.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/matches/78" for 127.0.0.1 at 2014-12-18 20:16:14 +0100
+Processing by MatchesController#show as HTML
+  Parameters: {"id"=>"78"}
+  [1m[36mMatch Load (0.6ms)[0m  [1mSELECT  "matches".* FROM "matches"  WHERE "matches"."id" = $1 LIMIT 1[0m  [["id", 78]]
+  [1m[35mGamestat Load (1.9ms)[0m  SELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 78
+  Rendered matches/show.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 287ms (Views: 282.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/matches" for 127.0.0.1 at 2014-12-18 20:16:24 +0100
+Processing by MatchesController#index as HTML
+  [1m[36mMatch Load (1.4ms)[0m  [1mSELECT "matches".* FROM "matches"[0m
+  Rendered matches/index.html.erb within layouts/application (150.4ms)
+Completed 200 OK in 384ms (Views: 381.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/matches/77" for 127.0.0.1 at 2014-12-18 20:16:32 +0100
+Processing by MatchesController#show as HTML
+  Parameters: {"id"=>"77"}
+  [1m[35mMatch Load (0.6ms)[0m  SELECT  "matches".* FROM "matches"  WHERE "matches"."id" = $1 LIMIT 1  [["id", 77]]
+  [1m[36mGamestat Load (3.3ms)[0m  [1mSELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 77[0m
+  Rendered matches/show.html.erb within layouts/application (41.1ms)
+Completed 200 OK in 285ms (Views: 279.4ms | ActiveRecord: 3.9ms)

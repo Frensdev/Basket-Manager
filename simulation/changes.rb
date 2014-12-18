@@ -81,13 +81,32 @@ titulares = [position1,position2,position3,position4,position5]
 n = 0
 titulares.each do |rescue11|
 	if rescue11 == 11
+	check = true
+		suplentes.each do |suplente|
+			if check 
+				if ((oncourt[suplente].to_i - (n+1))**2) < 2
+					if energy[suplente].to_i > cambio
+						titulares[n] = suplente.to_i
+						suplentes.delete(suplente.to_i)
+						check = false
+					end
+				end
+			end
+		end
+	end
+n += 1
+end
+
+#rescue
+n = 0
+titulares.each do |rescue11|
+	if rescue11 == 11
 		puts "cambiando #{n}"
 		titulares[n] = suplentes[n]
 		suplentes.delete_at(n)
 	end
 	n += 1
 end
-
 
 
 #puts titulares
