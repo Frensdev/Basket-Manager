@@ -1,14 +1,14 @@
 
-stats xogadores (simulate/createplayerstest.rb)
+stats xogadores (simulation/createplayerstest.rb)
 
 	nombre , apellido , city , nacimiento , altura , peso , position , shotins , shotmed , shotlong , shotfree , fuerza , speed , jump , resist , steal , block , pass , reb , mental , teamwork , potencial , intensidad
 
 ========================================
 funciones partido
-	denfensa (simulate/defenseplay.rb)
+	denfensa (simulation/defenseplay.rb)
 
-	tiro (simulate/shotfunc.rb)
+	tiro (simulation/shotfunc.rb)
 
-	cambios (simulate/changes.rb)
+	cambios (simulation/changes.rb)
 
 =========================================
