@@ -1,5 +1,5 @@
 def position(attackerstat0,attackerstat1,attackerstat2,attackerstat3,attackerstat4,attackeroncourt0,attackeroncourt1,attackeroncourt2,attackeroncourt3,attackeroncourt4,defenderstat0,defenderstat1,defenderstat2,defenderstat3,defenderstat4,defenderoncourt0,defenderoncourt1,defenderoncourt2,defenderoncourt3,defenderoncourt4)
-	
+#añadir rebotes defensivos 	
 	atackerteam = [attackeroncourt0,attackeroncourt1,attackeroncourt2,attackeroncourt3,attackeroncourt4]
 	defenderteam = [defenderoncourt0,defenderoncourt1,defenderoncourt2,defenderoncourt3,defenderoncourt4]
 
