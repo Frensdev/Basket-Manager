@@ -458,27 +458,27 @@ puts "visit team #{teamastats[0][1]+ teamastats[1][1] + teamastats[2][1] + teama
 
 #estadisticas equipos
 n=0
-hometeam_stats = [0,hometeam[n]["team_id"],match_id,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+hometeam_stats = [-1,hometeam[n]["team_id"],match_id,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 #guardar estadisticas jugadores y sumando para estadisticas totales team
 11.times do
 	teamhstats[n]
 	hometeam[n]
 
 	saveplayerstat(hometeam[n]["id"],hometeam[n]["team_id"],match_id,teamhstats[n][0],teamhstats[n][1],teamhstats[n][10],teamhstats[n][11],teamhstats[n][12],teamhstats[n][13],teamhstats[n][14],teamhstats[n][15],teamhstats[n][5],teamhstats[n][7],teamhstats[n][8],teamhstats[n][2],teamhstats[n][4],teamhstats[n][3],teamhstats[n][6],teamhstats[n][9],0)
-	hometeam_stats = [0,hometeam[n]["team_id"],match_id,hometeam_stats[3] + teamhstats[n][0],hometeam_stats[4] + teamhstats[n][1],hometeam_stats[5] + teamhstats[n][10],hometeam_stats[6] + teamhstats[n][11], hometeam_stats[7] + teamhstats[n][12],hometeam_stats[8] + teamhstats[n][13], hometeam_stats[9] + teamhstats[n][14], hometeam_stats[10] + teamhstats[n][15], hometeam_stats[11] + teamhstats[n][5], hometeam_stats[12] + teamhstats[n][7], hometeam_stats[13] + teamhstats[n][8], hometeam_stats[14] + teamhstats[n][2], hometeam_stats[15] + teamhstats[n][4], hometeam_stats[16] +teamhstats[n][3], hometeam_stats[17] + teamhstats[n][6], hometeam_stats[18] + teamhstats[n][9],0]
+	hometeam_stats = [-1,hometeam[n]["team_id"],match_id,hometeam_stats[3] + teamhstats[n][0],hometeam_stats[4] + teamhstats[n][1],hometeam_stats[5] + teamhstats[n][10],hometeam_stats[6] + teamhstats[n][11], hometeam_stats[7] + teamhstats[n][12],hometeam_stats[8] + teamhstats[n][13], hometeam_stats[9] + teamhstats[n][14], hometeam_stats[10] + teamhstats[n][15], hometeam_stats[11] + teamhstats[n][5], hometeam_stats[12] + teamhstats[n][7], hometeam_stats[13] + teamhstats[n][8], hometeam_stats[14] + teamhstats[n][2], hometeam_stats[15] + teamhstats[n][4], hometeam_stats[16] +teamhstats[n][3], hometeam_stats[17] + teamhstats[n][6], hometeam_stats[18] + teamhstats[n][9],0]
 	n+=1
 end
 saveplayerstat(hometeam_stats[0],hometeam_stats[1],hometeam_stats[2],hometeam_stats[3],hometeam_stats[4],hometeam_stats[5],hometeam_stats[6],hometeam_stats[7],hometeam_stats[8],hometeam_stats[9],hometeam_stats[10],hometeam_stats[11],hometeam_stats[12],hometeam_stats[13],hometeam_stats[14],hometeam_stats[15],hometeam_stats[16],hometeam_stats[17],hometeam_stats[18],hometeam_stats[19])
 
 
 n=0
-awayteam_stats = [0,awayteam[n]["team_id"],match_id,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+awayteam_stats = [-2,awayteam[n]["team_id"],match_id,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 11.times do
 	teamastats[n]
 	awayteam[n]
 
 	saveplayerstat(awayteam[n]["id"],awayteam[n]["team_id"],match_id,teamastats[n][0],teamastats[n][1],teamastats[n][10],teamastats[n][11],teamastats[n][12],teamastats[n][13],teamastats[n][14],teamastats[n][15],teamastats[n][5],teamastats[n][7],teamastats[n][8],teamastats[n][2],teamastats[n][4],teamastats[n][3],teamastats[n][6],teamastats[n][9],0)
-	awayteam_stats = [0,awayteam[n]["team_id"],match_id,awayteam_stats[3] + teamastats[n][0],awayteam_stats[4] + teamastats[n][1],awayteam_stats[5] + teamastats[n][10],awayteam_stats[6] + teamastats[n][11], awayteam_stats[7] + teamastats[n][12],awayteam_stats[8] + teamastats[n][13], awayteam_stats[9] + teamastats[n][14], awayteam_stats[10] + teamastats[n][15], awayteam_stats[11] + teamastats[n][5], awayteam_stats[12] + teamastats[n][7], awayteam_stats[13] + teamastats[n][8], awayteam_stats[14] + teamastats[n][2], awayteam_stats[15] + teamastats[n][4], awayteam_stats[16] +teamastats[n][3], awayteam_stats[17] + teamastats[n][6], awayteam_stats[18] + teamastats[n][9],0]
+	awayteam_stats = [-2,awayteam[n]["team_id"],match_id,awayteam_stats[3] + teamastats[n][0],awayteam_stats[4] + teamastats[n][1],awayteam_stats[5] + teamastats[n][10],awayteam_stats[6] + teamastats[n][11], awayteam_stats[7] + teamastats[n][12],awayteam_stats[8] + teamastats[n][13], awayteam_stats[9] + teamastats[n][14], awayteam_stats[10] + teamastats[n][15], awayteam_stats[11] + teamastats[n][5], awayteam_stats[12] + teamastats[n][7], awayteam_stats[13] + teamastats[n][8], awayteam_stats[14] + teamastats[n][2], awayteam_stats[15] + teamastats[n][4], awayteam_stats[16] +teamastats[n][3], awayteam_stats[17] + teamastats[n][6], awayteam_stats[18] + teamastats[n][9],0]
 	n+=1
 end
 saveplayerstat(awayteam_stats[0],awayteam_stats[1],awayteam_stats[2],awayteam_stats[3],awayteam_stats[4],awayteam_stats[5],awayteam_stats[6],awayteam_stats[7],awayteam_stats[8],awayteam_stats[9],awayteam_stats[10],awayteam_stats[11],awayteam_stats[12],awayteam_stats[13],awayteam_stats[14],awayteam_stats[15],awayteam_stats[16],awayteam_stats[17],awayteam_stats[18],awayteam_stats[19])

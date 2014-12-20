@@ -3851,3 +3851,1107 @@ Processing by MatchesController#show as HTML
   [1m[36mGamestat Load (3.3ms)[0m  [1mSELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 77[0m
   Rendered matches/show.html.erb within layouts/application (41.1ms)
 Completed 200 OK in 285ms (Views: 279.4ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-18 21:10:05 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 800ms (Views: 770.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/gamestats.css?body=1" for 127.0.0.1 at 2014-12-18 21:10:09 +0100
+
+
+Started GET "/assets/jornadas.css?body=1" for 127.0.0.1 at 2014-12-18 21:10:09 +0100
+
+
+Started GET "/assets/leagues.css?body=1" for 127.0.0.1 at 2014-12-18 21:10:09 +0100
+
+
+Started GET "/assets/matches.css?body=1" for 127.0.0.1 at 2014-12-18 21:10:09 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-18 21:10:09 +0100
+
+
+Started GET "/assets/players.css?body=1" for 127.0.0.1 at 2014-12-18 21:10:09 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-18 21:10:09 +0100
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-12-18 21:10:09 +0100
+
+
+Started GET "/assets/seasons.css?body=1" for 127.0.0.1 at 2014-12-18 21:10:09 +0100
+
+
+Started GET "/assets/wellcome.css?body=1" for 127.0.0.1 at 2014-12-18 21:10:09 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-18 21:10:09 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-18 21:10:09 +0100
+
+
+Started GET "/assets/gamestats.js?body=1" for 127.0.0.1 at 2014-12-18 21:10:09 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-18 21:10:09 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-18 21:10:09 +0100
+
+
+Started GET "/assets/jornadas.js?body=1" for 127.0.0.1 at 2014-12-18 21:10:09 +0100
+
+
+Started GET "/assets/leagues.js?body=1" for 127.0.0.1 at 2014-12-18 21:10:09 +0100
+
+
+Started GET "/assets/matches.js?body=1" for 127.0.0.1 at 2014-12-18 21:10:09 +0100
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2014-12-18 21:10:09 +0100
+
+
+Started GET "/assets/seasons.js?body=1" for 127.0.0.1 at 2014-12-18 21:10:09 +0100
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-12-18 21:10:09 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-18 21:10:09 +0100
+
+
+Started GET "/assets/wellcome.js?body=1" for 127.0.0.1 at 2014-12-18 21:10:09 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-18 21:10:09 +0100
+
+
+Started GET "/matches" for 127.0.0.1 at 2014-12-18 21:10:24 +0100
+Processing by MatchesController#index as HTML
+  [1m[35mMatch Load (1.9ms)[0m  SELECT "matches".* FROM "matches"
+  Rendered matches/index.html.erb within layouts/application (164.6ms)
+Completed 200 OK in 433ms (Views: 421.1ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/matches/80" for 127.0.0.1 at 2014-12-18 21:10:32 +0100
+Processing by MatchesController#show as HTML
+  Parameters: {"id"=>"80"}
+  [1m[36mMatch Load (9.4ms)[0m  [1mSELECT  "matches".* FROM "matches"  WHERE "matches"."id" = $1 LIMIT 1[0m  [["id", 80]]
+  [1m[35mGamestat Load (2.0ms)[0m  SELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 80
+  Rendered matches/show.html.erb within layouts/application (66.6ms)
+Completed 200 OK in 429ms (Views: 331.4ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-20 13:34:47 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (33.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 671ms (Views: 639.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/gamestats.css?body=1" for 127.0.0.1 at 2014-12-20 13:34:49 +0100
+
+
+Started GET "/assets/jornadas.css?body=1" for 127.0.0.1 at 2014-12-20 13:34:49 +0100
+
+
+Started GET "/assets/matches.css?body=1" for 127.0.0.1 at 2014-12-20 13:34:49 +0100
+
+
+Started GET "/assets/leagues.css?body=1" for 127.0.0.1 at 2014-12-20 13:34:49 +0100
+
+
+Started GET "/assets/players.css?body=1" for 127.0.0.1 at 2014-12-20 13:34:49 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 13:34:49 +0100
+
+
+Started GET "/assets/seasons.css?body=1" for 127.0.0.1 at 2014-12-20 13:34:49 +0100
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-12-20 13:34:50 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-20 13:34:50 +0100
+
+
+Started GET "/assets/wellcome.css?body=1" for 127.0.0.1 at 2014-12-20 13:34:50 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 13:34:50 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 13:34:50 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 13:34:50 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 13:34:50 +0100
+
+
+Started GET "/assets/gamestats.js?body=1" for 127.0.0.1 at 2014-12-20 13:34:50 +0100
+
+
+Started GET "/assets/jornadas.js?body=1" for 127.0.0.1 at 2014-12-20 13:34:50 +0100
+
+
+Started GET "/assets/leagues.js?body=1" for 127.0.0.1 at 2014-12-20 13:34:50 +0100
+
+
+Started GET "/assets/matches.js?body=1" for 127.0.0.1 at 2014-12-20 13:34:50 +0100
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2014-12-20 13:34:50 +0100
+
+
+Started GET "/assets/seasons.js?body=1" for 127.0.0.1 at 2014-12-20 13:34:50 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-20 13:34:50 +0100
+
+
+Started GET "/assets/wellcome.js?body=1" for 127.0.0.1 at 2014-12-20 13:34:50 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 13:34:50 +0100
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-12-20 13:34:50 +0100
+
+
+Started GET "/leagues" for 127.0.0.1 at 2014-12-20 13:34:57 +0100
+Processing by LeaguesController#index as HTML
+  [1m[35mLeague Load (22.2ms)[0m  SELECT "leagues".* FROM "leagues"
+  Rendered leagues/index.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 318ms (Views: 283.7ms | ActiveRecord: 22.2ms)
+
+
+Started GET "/matches" for 127.0.0.1 at 2014-12-20 13:35:01 +0100
+Processing by MatchesController#index as HTML
+  [1m[36mMatch Load (50.4ms)[0m  [1mSELECT "matches".* FROM "matches"[0m
+  Rendered matches/index.html.erb within layouts/application (252.2ms)
+Completed 200 OK in 496ms (Views: 397.0ms | ActiveRecord: 94.9ms)
+
+
+Started GET "/matches/1" for 127.0.0.1 at 2014-12-20 13:36:28 +0100
+Processing by MatchesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMatch Load (0.5ms)[0m  SELECT  "matches".* FROM "matches"  WHERE "matches"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mGamestat Load (144.0ms)[0m  [1mSELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 1[0m
+  Rendered matches/show.html.erb within layouts/application (200.4ms)
+Completed 200 OK in 511ms (Views: 311.7ms | ActiveRecord: 148.8ms)
+
+
+Started GET "/matches" for 127.0.0.1 at 2014-12-20 13:41:28 +0100
+Processing by MatchesController#index as HTML
+  [1m[35mMatch Load (1.3ms)[0m  SELECT "matches".* FROM "matches"
+  Rendered matches/index.html.erb within layouts/application (141.6ms)
+Completed 200 OK in 384ms (Views: 382.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/matches/17" for 127.0.0.1 at 2014-12-20 13:41:32 +0100
+Processing by MatchesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mMatch Load (0.8ms)[0m  [1mSELECT  "matches".* FROM "matches"  WHERE "matches"."id" = $1 LIMIT 1[0m  [["id", 17]]
+  [1m[35mGamestat Load (2.7ms)[0m  SELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 17
+  Rendered matches/show.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 261ms (Views: 255.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/matches/81" for 127.0.0.1 at 2014-12-20 13:41:40 +0100
+Processing by MatchesController#show as HTML
+  Parameters: {"id"=>"81"}
+  [1m[36mMatch Load (0.7ms)[0m  [1mSELECT  "matches".* FROM "matches"  WHERE "matches"."id" = $1 LIMIT 1[0m  [["id", 81]]
+  [1m[35mGamestat Load (1.6ms)[0m  SELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 81
+  Rendered matches/show.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 266ms (Views: 261.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/seasons.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:40 +0100
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:40 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:40 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:40 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:40 +0100
+
+
+Started GET "/assets/jornadas.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:40 +0100
+
+
+Started GET "/assets/leagues.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:40 +0100
+
+
+Started GET "/assets/gamestats.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:40 +0100
+
+
+Started GET "/assets/matches.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:40 +0100
+
+
+Started GET "/assets/seasons.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:40 +0100
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:40 +0100
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:40 +0100
+
+
+Started GET "/assets/wellcome.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:40 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:40 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:40 +0100
+
+
+Started GET "/assets/jornadas.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:40 +0100
+
+
+Started GET "/assets/gamestats.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:40 +0100
+
+
+Started GET "/assets/leagues.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:40 +0100
+
+
+Started GET "/assets/players.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:40 +0100
+
+
+Started GET "/assets/matches.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:40 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:40 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:40 +0100
+
+
+Started GET "/assets/wellcome.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:40 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:40 +0100
+
+
+Started GET "/matches/80" for 127.0.0.1 at 2014-12-20 13:41:44 +0100
+Processing by MatchesController#show as HTML
+  Parameters: {"id"=>"80"}
+  [1m[36mMatch Load (0.8ms)[0m  [1mSELECT  "matches".* FROM "matches"  WHERE "matches"."id" = $1 LIMIT 1[0m  [["id", 80]]
+  [1m[35mGamestat Load (2.9ms)[0m  SELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 80
+  Rendered matches/show.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 284ms (Views: 278.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/gamestats.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:44 +0100
+
+
+Started GET "/assets/jornadas.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:44 +0100
+
+
+Started GET "/assets/leagues.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:44 +0100
+
+
+Started GET "/assets/matches.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:44 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:44 +0100
+
+
+Started GET "/assets/players.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:44 +0100
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:44 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:44 +0100
+
+
+Started GET "/assets/wellcome.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:44 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:44 +0100
+
+
+Started GET "/assets/seasons.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:44 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:44 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:44 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:44 +0100
+
+
+Started GET "/assets/gamestats.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:44 +0100
+
+
+Started GET "/assets/jornadas.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:44 +0100
+
+
+Started GET "/assets/leagues.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:44 +0100
+
+
+Started GET "/assets/matches.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:44 +0100
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:44 +0100
+
+
+Started GET "/assets/seasons.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:44 +0100
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:44 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:44 +0100
+
+
+Started GET "/assets/wellcome.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:44 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:44 +0100
+
+
+Started GET "/matches/79" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+Processing by MatchesController#show as HTML
+  Parameters: {"id"=>"79"}
+  [1m[36mMatch Load (0.8ms)[0m  [1mSELECT  "matches".* FROM "matches"  WHERE "matches"."id" = $1 LIMIT 1[0m  [["id", 79]]
+  [1m[35mGamestat Load (3.3ms)[0m  SELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 79
+  Rendered matches/show.html.erb within layouts/application (49.0ms)
+Completed 200 OK in 309ms (Views: 302.6ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/gamestats.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+
+
+Started GET "/assets/jornadas.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+
+
+Started GET "/assets/matches.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+
+
+Started GET "/assets/players.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+
+
+Started GET "/assets/leagues.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+
+
+Started GET "/assets/seasons.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+
+
+Started GET "/assets/wellcome.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+
+
+Started GET "/assets/jornadas.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+
+
+Started GET "/assets/gamestats.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+
+
+Started GET "/assets/leagues.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+
+
+Started GET "/assets/matches.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+
+
+Started GET "/assets/seasons.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+
+
+Started GET "/assets/wellcome.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+
+
+Started GET "/matches/78" for 127.0.0.1 at 2014-12-20 13:41:45 +0100
+Processing by MatchesController#show as HTML
+  Parameters: {"id"=>"78"}
+  [1m[36mMatch Load (0.7ms)[0m  [1mSELECT  "matches".* FROM "matches"  WHERE "matches"."id" = $1 LIMIT 1[0m  [["id", 78]]
+  [1m[35mGamestat Load (1.8ms)[0m  SELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 78
+  Rendered matches/show.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 275ms (Views: 270.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/gamestats.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/jornadas.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/leagues.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/players.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/matches.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/seasons.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/wellcome.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/leagues.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/jornadas.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/matches.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/gamestats.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/seasons.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/wellcome.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/matches/77" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+Processing by MatchesController#show as HTML
+  Parameters: {"id"=>"77"}
+  [1m[36mMatch Load (0.6ms)[0m  [1mSELECT  "matches".* FROM "matches"  WHERE "matches"."id" = $1 LIMIT 1[0m  [["id", 77]]
+  [1m[35mGamestat Load (1.9ms)[0m  SELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 77
+  Rendered matches/show.html.erb within layouts/application (40.7ms)
+Completed 200 OK in 294ms (Views: 288.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/gamestats.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/leagues.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/matches.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/players.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/jornadas.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/seasons.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/wellcome.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/jornadas.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/gamestats.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:46 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/matches.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/seasons.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/leagues.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/wellcome.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/matches/76" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+Processing by MatchesController#show as HTML
+  Parameters: {"id"=>"76"}
+  [1m[36mMatch Load (0.5ms)[0m  [1mSELECT  "matches".* FROM "matches"  WHERE "matches"."id" = $1 LIMIT 1[0m  [["id", 76]]
+  [1m[35mGamestat Load (1.8ms)[0m  SELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 76
+  Rendered matches/show.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 282ms (Views: 273.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/gamestats.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/jornadas.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/leagues.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/matches.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/players.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/seasons.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/wellcome.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/gamestats.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/jornadas.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/leagues.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/matches.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/seasons.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/assets/wellcome.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+
+
+Started GET "/matches/75" for 127.0.0.1 at 2014-12-20 13:41:47 +0100
+Processing by MatchesController#show as HTML
+  Parameters: {"id"=>"75"}
+  [1m[36mMatch Load (0.6ms)[0m  [1mSELECT  "matches".* FROM "matches"  WHERE "matches"."id" = $1 LIMIT 1[0m  [["id", 75]]
+  [1m[35mGamestat Load (1.9ms)[0m  SELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 75
+  Rendered matches/show.html.erb within layouts/application (44.6ms)
+Completed 200 OK in 340ms (Views: 334.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/gamestats.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:48 +0100
+
+
+Started GET "/assets/jornadas.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:48 +0100
+
+
+Started GET "/assets/matches.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:48 +0100
+
+
+Started GET "/assets/leagues.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:48 +0100
+
+
+Started GET "/assets/players.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:48 +0100
+
+
+Started GET "/assets/seasons.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:48 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:48 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:48 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:48 +0100
+
+
+Started GET "/assets/wellcome.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:48 +0100
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:48 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:48 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:48 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:48 +0100
+
+
+Started GET "/assets/gamestats.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:48 +0100
+
+
+Started GET "/assets/matches.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:48 +0100
+
+
+Started GET "/assets/jornadas.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:48 +0100
+
+
+Started GET "/assets/leagues.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:48 +0100
+
+
+Started GET "/assets/seasons.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:48 +0100
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:48 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:48 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:48 +0100
+
+
+Started GET "/assets/wellcome.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:48 +0100
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:48 +0100
+
+
+Started GET "/matches/74" for 127.0.0.1 at 2014-12-20 13:41:49 +0100
+Processing by MatchesController#show as HTML
+  Parameters: {"id"=>"74"}
+  [1m[36mMatch Load (0.6ms)[0m  [1mSELECT  "matches".* FROM "matches"  WHERE "matches"."id" = $1 LIMIT 1[0m  [["id", 74]]
+  [1m[35mGamestat Load (1.9ms)[0m  SELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 74
+  Rendered matches/show.html.erb within layouts/application (35.4ms)
+Completed 200 OK in 300ms (Views: 295.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/gamestats.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/jornadas.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/leagues.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/players.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/matches.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/seasons.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/wellcome.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/gamestats.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/jornadas.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/leagues.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/seasons.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/matches.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/wellcome.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/matches/73" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+Processing by MatchesController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mMatch Load (0.5ms)[0m  [1mSELECT  "matches".* FROM "matches"  WHERE "matches"."id" = $1 LIMIT 1[0m  [["id", 73]]
+  [1m[35mGamestat Load (1.7ms)[0m  SELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 73
+  Rendered matches/show.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 291ms (Views: 286.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/gamestats.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/jornadas.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/matches.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/leagues.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/players.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/seasons.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/wellcome.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/gamestats.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/leagues.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/jornadas.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/matches.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/seasons.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/wellcome.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+
+
+Started GET "/matches/72" for 127.0.0.1 at 2014-12-20 13:41:50 +0100
+Processing by MatchesController#show as HTML
+  Parameters: {"id"=>"72"}
+  [1m[36mMatch Load (0.6ms)[0m  [1mSELECT  "matches".* FROM "matches"  WHERE "matches"."id" = $1 LIMIT 1[0m  [["id", 72]]
+  [1m[35mGamestat Load (1.8ms)[0m  SELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 72
+  Rendered matches/show.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 274ms (Views: 268.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/gamestats.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:51 +0100
+
+
+Started GET "/assets/leagues.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:51 +0100
+
+
+Started GET "/assets/players.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:51 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:51 +0100
+
+
+Started GET "/assets/matches.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:51 +0100
+
+
+Started GET "/assets/jornadas.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:51 +0100
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:51 +0100
+
+
+Started GET "/assets/seasons.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:51 +0100
+
+
+Started GET "/assets/wellcome.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:51 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:51 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:51 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:51 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:51 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:51 +0100
+
+
+Started GET "/assets/jornadas.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:51 +0100
+
+
+Started GET "/assets/gamestats.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:51 +0100
+
+
+Started GET "/assets/matches.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:51 +0100
+
+
+Started GET "/assets/leagues.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:51 +0100
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:51 +0100
+
+
+Started GET "/assets/seasons.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:51 +0100
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:51 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:51 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:51 +0100
+
+
+Started GET "/assets/wellcome.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:51 +0100
+
+
+Started GET "/matches/71" for 127.0.0.1 at 2014-12-20 13:41:51 +0100
+Processing by MatchesController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mMatch Load (0.6ms)[0m  [1mSELECT  "matches".* FROM "matches"  WHERE "matches"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35mGamestat Load (2.8ms)[0m  SELECT "gamestats".* FROM "gamestats"  WHERE "gamestats"."match_id" = 71
+  Rendered matches/show.html.erb within layouts/application (49.9ms)
+Completed 200 OK in 328ms (Views: 322.0ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/gamestats.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:52 +0100
+
+
+Started GET "/assets/jornadas.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:52 +0100
+
+
+Started GET "/assets/leagues.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:52 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:52 +0100
+
+
+Started GET "/assets/players.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:52 +0100
+
+
+Started GET "/assets/matches.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:52 +0100
+
+
+Started GET "/assets/seasons.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:52 +0100
+
+
+Started GET "/assets/teams.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:52 +0100
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:52 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:52 +0100
+
+
+Started GET "/assets/wellcome.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:52 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 13:41:52 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:52 +0100
+
+
+Started GET "/assets/jornadas.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:52 +0100
+
+
+Started GET "/assets/gamestats.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:52 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:52 +0100
+
+
+Started GET "/assets/leagues.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:52 +0100
+
+
+Started GET "/assets/matches.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:52 +0100
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:52 +0100
+
+
+Started GET "/assets/seasons.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:52 +0100
+
+
+Started GET "/assets/teams.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:52 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:52 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:52 +0100
+
+
+Started GET "/assets/wellcome.js?body=1" for 127.0.0.1 at 2014-12-20 13:41:52 +0100
