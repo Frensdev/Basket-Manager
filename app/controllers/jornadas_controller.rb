@@ -11,6 +11,19 @@ class JornadasController < ApplicationController
   # GET /jornadas/1.json
   def show
     @matches = Match.where(jornada_id: params[:id])
+    n = 0
+    @partidos = []
+      @matches.each do |match|
+       @partidos[n] = match.id
+       n += 1
+      end
+    @results = Gamestat.where(match_id: @partidos,player_id: [-1,-2])
+    @puntos = Gamestat.where(match_id: @partidos).where.not(player_id: [-1,-2]).limit(10).order("puntos DESC")
+    @rebotes = Gamestat.where(match_id: @partidos).where.not(player_id: [-1,-2]).limit(10).order("rebotes DESC")
+    @asistencias = Gamestat.where(match_id: @partidos).where.not(player_id: [-1,-2]).limit(10).order("assistencias DESC")
+    @robos = Gamestat.where(match_id: @partidos).where.not(player_id: [-1,-2]).limit(10).order("robos DESC")
+    @tapones = Gamestat.where(match_id: @partidos).where.not(player_id: [-1,-2]).limit(10).order("tapones DESC")
+    @valoracion = Gamestat.where(match_id: @partidos).where.not(player_id: [-1,-2]).limit(10).order("valoracion DESC")
   end
 
   # GET /jornadas/new

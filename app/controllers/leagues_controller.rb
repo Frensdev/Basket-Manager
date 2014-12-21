@@ -10,6 +10,28 @@ class LeaguesController < ApplicationController
   # GET /leagues/1
   # GET /leagues/1.json
   def show
+    @jornadas = Jornada.where(league_id: params[:id] , season_id: "0")
+
+
+      jornadas = []
+    j = 0
+    @jornadas.each do |jornada|
+      jornadas[j] = jornada.id
+        j+=1
+      end
+
+
+    @matches = Match.where(jornada_id: jornadas)
+    
+    n = 0
+    partidos = []
+      @matches.each do |match|
+       partidos[n] = match.id
+       n += 1
+      end
+
+
+    @results = Gamestat.where(match_id: partidos, player_id: [-1,-2])
   end
 
   # GET /leagues/new
